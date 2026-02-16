@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>E-Commerce Frontend</title>
+  <title>Product Details</title>
   <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
@@ -18,12 +18,11 @@
     </div>
 
     <nav class="nav" id="navMenu">
-      <a href="#">Home</a>
-      <a href="#products">Products</a>
+      <a href="index.html">Home</a>
+      <a href="index.html#products">Products</a>
     </nav>
 
     <div class="right-section">
-      <input type="text" class="search" placeholder="Search products...">
       <div class="cart">
         🛒
         <span class="badge" id="cartCount">0</span>
@@ -34,23 +33,15 @@
   </div>
 </header>
 
-<section class="hero">
-  <div class="hero-content">
-    <h1>Biggest Sale of the Year!</h1>
-    <p>Up to 50% off on trending products.</p>
-    <a href="#products" class="cta-btn">Shop Now</a>
-  </div>
-</section>
-
-<section class="products-section" id="products">
+<section class="product-detail-section">
   <div class="container">
-    <h2 class="section-title">Featured Products</h2>
-    <div id="loadingMessage" class="loading">Loading products...</div>
-    <div id="errorMessage" class="error"></div>
-    <div class="products-grid" id="productsGrid"></div>
+    <div id="productLoading" class="loading">Loading product...</div>
+    <div id="productError" class="error"></div>
+    <div id="productDetail"></div>
   </div>
 </section>
 
 <script src="scripts/app.js"></script>
+<script src="scripts/product.js"></script>
 </body>
 </html>
